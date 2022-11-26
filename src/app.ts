@@ -108,6 +108,7 @@ function bootstrap() {
       excludeExtraneousValues: true,
       exposeUnsetFields: false,
     },
+    routePrefix: '/api',
     controllers: [
       UserController,
       AuthController,
@@ -120,7 +121,7 @@ function bootstrap() {
       // AppreciationProductController,
       PostController,
       CommentController,
-      ReactionController
+      ReactionController,
     ],
     authorizationChecker,
     currentUserChecker,
